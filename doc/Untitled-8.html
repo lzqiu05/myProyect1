@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+<style>
+    h1, strong{
+        text-decoration: underline ;
+    }
+    h1{
+        font-size: max(20px,20vw);
+    }
+    h1 strong{/*para  todos los descendientes */
+       color: yellowgreen /*1em=16px*/
+    }
+    h1>span{/*al descendiente directo*/
+       background-color: aqua;
+
+    }
+</style>
+</head>
+<body>
+    <h1>esto <span> esto es span </span> <strong>es <span>un </span> h1 </strong> que solo hay  uno</h1>
+    <strong>esta fuera un h1 </strong>
+</body>
+</html>

@@ -1,0 +1,114 @@
+:root {
+
+    --primary-color: #1c1c1c;
+    --secondary-color: white;
+    --acent-color: rgb(0, 250, 205);
+
+}
+
+:root.darkMode {
+
+    --primary-color: white;
+    --secondary-color: #1c1c1c;
+    --acent-color: black;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+main {
+
+    background-image: url(../imagenes/goku\ final.jpg);
+    height: 100vh;
+
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+menu {
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+menu svg {
+
+    height: 1rem;
+    width: 1rem;
+    align-items: center;
+    color: var(--acent-color);
+    align-self: center;
+    transition: all 0.3s;
+}
+
+menu button {
+
+    background-color: transparent;
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+menu a {
+
+    color: var(--acent-color);
+    transition: all 0.3s;
+}
+
+menu li,
+button {
+
+    border: 2px solid var(--acent-color);
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin: 2px;
+
+}
+
+header img {
+
+    max-width: 250px;
+    max-height: 250px;
+    border: 4px solid var(--secondary-color);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    transition: all 0.3s;
+}
+
+#aboutMe {
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#aboutMe img {
+
+    margin-top: 10rem;
+
+}
+
+#aboutMe h1 {
+
+    font-size: 10vw;
+    margin: 0;
+    color: var(--secondary-color);
+    transition: all 1s;
+
+}
